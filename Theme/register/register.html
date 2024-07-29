@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../AuthCss/main.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="register">
+      <div class="header">
+        <h1>Sign-up</h1>
+      </div>
+      <form id="main-form">
+        <div class="input-items">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+        <div class="input-items">
+          <label for="name">E-mail</label>
+          <input type="text" id="name" name="name" placeholder="E-mail" />
+        </div>
+        <div class="input-items">
+          <label for="name">Password</label>
+          <input type="text" id="name" name="name" placeholder="Password" />
+        </div>
+        <div class="button">
+          <button type="submit">Sign-up</button>
+        </div>
+        <div class="linkAuthPage">
+          <p>
+            Already have an account?
+            <a id="linkToPage" href="../Login/login.html">Sign-in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <audio
+      id="click-sound"
+      src="../Sounds/digital-button-click-pop-davies-aguirre-1-1-00-00.mp3"
+      preload="auto"
+    ></audio>
+    <script src="../AuthJs/sound.js"></script>
+  </body>
+</html>

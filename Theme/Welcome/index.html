@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../AuthCss/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input class="menu-checkbox" id="menu" type="checkbox" name="menu" />
+    <nav class="menu">
+      <label class="menu-dots" for="menu">
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+      </label>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <a href="../Pages/Home.html"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="../Pages/Docs.html"><i class="fa-solid fa-file"></i> Docs</a>
+        </li>
+        <li class="menu-item">
+          <a href="../Pages/Chats.html"
+            ><i class="fa-solid fa-comments"></i> Chats</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="../Pages/Live.html"
+            ><i class="fa-solid fa-headset"></i> Live</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="../Pages//Courses.html"
+            ><i class="fa-solid fa-graduation-cap"></i> Courses</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="../Pages/More.html"
+            ><i class="fa-solid fa-caret-down"></i> More</a
+          >
+        </li>
+      </ul>
+      <label for="menu" class="menu-closer-overlay"></label>
+    </nav>
+    <!-- Audio element for click sound -->
+    <audio
+      id="click-sound"
+      src="../Sounds/digital-button-click-pop-davies-aguirre-1-1-00-00.mp3"
+      preload="auto"
+    ></audio>
+    <script src="../AuthJs/sound.js"></script>
+    <!-- Link to your JavaScript file -->
+  </body>
+</html>
