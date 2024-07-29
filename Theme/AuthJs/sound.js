@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault(); // Prevent the default action (for demonstration)
     setTimeout(() => {
       window.location.href = linkToPage.href; // Navigate after sound plays
-    }, 200); // Delay should be slightly longer than the sound duration
+    }, 300); // Delay should be slightly longer than the sound duration
   });
 });
