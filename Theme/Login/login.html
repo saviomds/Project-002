@@ -12,6 +12,8 @@
         <h1>Sign-in</h1>
       </div>
       <form id="main-form">
+        <div class="error" hidden></div>
+        <div class="success" hidden></div>
         <div class="input-items">
           <label for="name">Name</label>
           <input
@@ -36,7 +38,7 @@
           </p>
         </div>
         <div class="button">
-          <button type="submit">Sign-in</button>
+          <button type="submit" id="login">Sign-in</button>
         </div>
         <div class="linkAuthPage">
           <p>
@@ -52,5 +54,6 @@
       preload="auto"
     ></audio>
     <script src="../AuthJs/sound.js"></script>
+    <script src="../AuthJs/loginErr.js"></script>
   </body>
 </html>

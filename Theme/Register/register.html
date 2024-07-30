@@ -12,6 +12,8 @@
         <h1>Sign-up</h1>
       </div>
       <form id="main-form">
+        <div class="error" hidden></div>
+        <div class="success" hidden></div>
         <div class="input-items">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Name" />
@@ -30,7 +32,7 @@
           />
         </div>
         <div class="button">
-          <button type="submit">Sign-up</button>
+          <button type="submit" id="register">Sign-up</button>
         </div>
         <div class="linkAuthPage">
           <p>
@@ -46,5 +48,6 @@
       preload="auto"
     ></audio>
     <script src="../AuthJs/sound.js"></script>
+    <script src="../AuthJs/registerErr.js"></script>
   </body>
 </html>

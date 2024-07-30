@@ -4,7 +4,41 @@ body {
   margin: 0;
   padding: 0;
 }
+/* error msg  */
+/* Define spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+/* Apply spinning animation to the icon */
+.spinning {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+.error {
+  color: red;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: rgba(255, 0, 0, 0.135);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.success {
+  color: rgb(34, 255, 0);
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: rgba(98, 255, 0, 0.135);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* error msg end  */
 .register {
   position: relative;
   top: 40px;

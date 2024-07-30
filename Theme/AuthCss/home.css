@@ -49,17 +49,6 @@ body {
   transform: scale(1.3) rotate(90deg);
 }
 
-.menu-dot {
-  width: 0.6rem;
-  height: 0.6rem;
-  background-color: #0082f4;
-  border-radius: 50%;
-}
-
-.menu-dot + .menu-dot {
-  margin-top: 0.4rem;
-}
-
 .menu-items {
   position: absolute;
   top: -4rem;
