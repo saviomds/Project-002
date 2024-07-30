@@ -14,7 +14,22 @@ body {
 .menu {
   position: relative;
 }
+.menu-dots i {
+  color: #0082f4;
+  font-size: 50px;
+  animation: change 2s infinite; /* Apply the animation */
+}
 
+@keyframes change {
+  0% {
+    color: #0051a3;
+    border-radius: 5px;
+  }
+  50% {
+    color: #0082f4;
+    border-radius: 5px;
+  }
+}
 .menu-dots {
   width: 6rem;
   height: 6rem;
