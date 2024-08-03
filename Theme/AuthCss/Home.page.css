@@ -160,7 +160,7 @@ div.button-start button:hover {
   position: relative;
   top: 100px;
   background-color: #ffffff;
-  border: 1px solid #cccccc0c;
+  border: 1px solid #b400000c;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -345,6 +345,12 @@ div.button-start button:hover {
   .holding-items > div {
     display: grid;
     grid-template-columns: 90%;
+  }
+  .main-section {
+    position: relative;
+    top: 100px;
+    margin: 10px;
+    padding: 10px;
   }
 
   .logo {
