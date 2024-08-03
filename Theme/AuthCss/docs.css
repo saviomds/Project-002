@@ -12,7 +12,6 @@ body {
 /* end section start  */
 .main-nav {
   position: fixed;
-  bottom: 10px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   width: 90%; /* Reduced width for better fit */
