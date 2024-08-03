@@ -375,4 +375,7 @@ div.button-start button:hover {
     max-width: 200px; /* Ensure button doesn't grow too large */
     padding: 8px;
   }
+  .main-footer {
+    padding-bottom: 70px;
+  }
 }
