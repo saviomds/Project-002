@@ -12,6 +12,7 @@ body {
 
 .menu {
   position: relative;
+  top: -30px;
 }
 .menu-dots i {
   color: #0082f4;
