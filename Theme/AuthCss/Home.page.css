@@ -83,7 +83,7 @@ div.button-start button:hover {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #0080ff;
+  background-color: #000f1dfd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
