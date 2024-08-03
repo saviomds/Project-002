@@ -135,13 +135,6 @@ div.button-start button:hover {
   cursor: pointer;
 }
 
-.logo h1 {
-  border: 5px solid rgb(0, 115, 255);
-  width: 44px;
-  height: 45px;
-  border-radius: 45%;
-  padding: 10px;
-}
 .logo h1 i {
   color: #0080ff4b;
   animation: change 5s infinite;
