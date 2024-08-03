@@ -12,7 +12,7 @@ body {
 /* end section start  */
 .main-nav {
   position: fixed;
-  bottom: 5px; /* Adjust as needed */
+  bottom: -1px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   width: 90%; /* Reduced width for better fit */
@@ -138,8 +138,6 @@ div.btn button {
     width: 90%;
     padding: 20px;
     background-color: #00101f;
-    position: relative;
-    bottom: 0px;
   }
   .list-items {
     height: auto;
@@ -193,8 +191,6 @@ div.btn button {
   .main-nav {
     width: 100%;
     padding: 15px;
-    position: relative;
-    bottom: 0px;
   }
   .container {
     margin-bottom: 200px;
