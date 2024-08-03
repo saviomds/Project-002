@@ -4,7 +4,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #010f1d;
+  color: #000;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.all {
+  position: fixed;
+  background-color: #fffffff1;
+  min-width: 100%;
+  min-height: 100%;
+}
+.sub-all {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-checkbox {
@@ -55,7 +75,7 @@ body {
   left: -5rem;
   width: 11rem;
   height: 13rem;
-  color: #fff;
+  color: #000000;
   pointer-events: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,7 +85,7 @@ body {
 
 .menu-item a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 
 .menu-item {
