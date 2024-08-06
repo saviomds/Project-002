@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Ubuntu;
   background-color: #e7e7e7;
   margin: 0;
   padding: 0;
@@ -10,7 +10,29 @@ body {
   color: #000000;
   overflow: auto;
 }
+.form-up {
+  float: right;
+  padding: 20px;
+}
+.form-up .signin {
+  color: #272727;
+}
+.form-up button {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid #d7d7d73c;
+  cursor: pointer;
 
+  color: #0080ff;
+}
+.form-up button:hover {
+  background-color: #0080ff;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
 /* section start  */
 .section-start {
   text-align: center;
@@ -83,7 +105,7 @@ div.button-start button:hover {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #000f1dfd;
+  background-color: #0084fffd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
@@ -98,7 +120,6 @@ div.button-start button:hover {
 .main-nav div a {
   text-decoration: none;
   font-size: 30px;
-  color: #ffffff;
 }
 
 .main-nav div a:hover {
@@ -131,7 +152,6 @@ div.button-start button:hover {
   margin: 10px;
   margin-top: 5px;
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
@@ -203,7 +223,6 @@ div.button-start button:hover {
 .card-text {
   color: #424242;
   text-align: start;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-button button {
@@ -292,6 +311,9 @@ div.button-start button:hover {
   color: #0080ff;
 }
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
   .main-nav {
     width: 90%;
     padding: 20px;
@@ -335,9 +357,23 @@ div.button-start button:hover {
     max-width: 200px; /* Ensure button doesn't grow too large */
     padding: 8px;
   }
+
+  .form-up {
+    float: right;
+    padding: 20px;
+    margin-top: -23px;
+  }
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .form-up {
+    float: right;
+    padding: 20px;
+    margin-top: -1px;
+  }
   .main-nav {
     width: 100%;
     padding: 15px;
@@ -360,7 +396,7 @@ div.button-start button:hover {
   }
 
   .section-start {
-    width: 95%;
+    width: auto;
     margin-top: 30px;
   }
 
@@ -377,5 +413,8 @@ div.button-start button:hover {
   }
   .main-footer {
     padding-bottom: 70px;
+  }
+  .section-start .start-now .text p {
+    text-align: start;
   }
 }

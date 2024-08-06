@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Ubuntu;
   background-color: #ffffff7f;
   margin: 0;
   padding: 0;
@@ -8,7 +8,48 @@ body {
   -ms-user-select: none; /* For Internet Explorer/Edge */
   user-select: none;
 }
+.heading-intro h1 {
+  font-size: 42px;
+  background: -webkit-linear-gradient(#004065, #b3009e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading-intro > div {
+  padding: 20px;
+  margin: 10px;
+}
 
+.cards-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+.card-intro {
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.card-intro .icons-intro {
+  padding: 10px;
+}
+.heading-intro {
+  text-align: start;
+  background-color: #fffffffc;
+  max-width: 900px;
+  margin: auto;
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-shadow: rgba(214, 214, 214, 0.601) 0px 2px 5px 0px,
+    rgba(143, 143, 143, 0.732) 0px 1px 1px 0px;
+  height: auto;
+}
 /* end section start  */
 .main-nav {
   position: fixed;
@@ -18,7 +59,7 @@ body {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #000f1dfd;
+  background-color: #0084fffd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
@@ -60,7 +101,7 @@ body {
 }
 .container {
   position: relative;
-  top: 50px;
+  top: 20px;
 }
 .list-items {
   text-align: center;
@@ -96,7 +137,6 @@ div.btn button {
   position: relative;
   left: 5%;
   width: 70%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .header h1 {
   text-transform: capitalize;
@@ -134,10 +174,12 @@ div.btn button {
   font-size: 20px;
 }
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
   .main-nav {
     width: 90%;
     padding: 20px;
-    background-color: #00101f;
   }
   .list-items {
     height: auto;
@@ -156,6 +198,10 @@ div.btn button {
   }
   .header p {
     font-size: 15px;
+  }
+  .cards-intro {
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
 
@@ -194,5 +240,12 @@ div.btn button {
   }
   .container {
     margin-bottom: 200px;
+  }
+  body {
+    padding: 10px;
+  }
+  .cards-intro {
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
