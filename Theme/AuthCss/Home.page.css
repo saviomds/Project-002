@@ -1,13 +1,13 @@
 body {
   font-family: Ubuntu;
-  background-color: #e7e7e7;
+  background-color: #000000;
   margin: 0;
   padding: 0;
   -webkit-user-select: none; /* For Safari and Chrome */
   -moz-user-select: none; /* For Firefox */
   -ms-user-select: none; /* For Internet Explorer/Edge */
   user-select: none;
-  color: #000000;
+  color: #ffffff;
   overflow: auto;
 }
 .form-up {
@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 .form-up .signin {
-  color: #272727;
+  color: #ffffff;
 }
 .form-up button {
   background-color: transparent;
@@ -46,7 +46,7 @@ body {
   border-top-left-radius: 100px;
 }
 .section-start > div {
-  background-color: #ffffff;
+  background-color: #0e0e0e;
   border-radius: 10px;
   width: 80%;
   padding: 20px;
@@ -67,12 +67,12 @@ body {
 }
 .section-start div div.text {
   font-size: 50px;
-  color: #393939;
+  color: #ffffff;
 }
 
 .section-start div div.sub-text {
   font-size: 30px;
-  color: #616161;
+  color: #d1d1d1;
   margin-top: -35px;
 }
 
@@ -83,8 +83,8 @@ div.button-start button {
   width: 100%; /* Full width on smaller screens */
   max-width: 200px; /* Limit width */
   background-color: #e5e5e5;
-  border: 1px solid #ccc;
-  color: #3c3c3c;
+  border: none;
+  color: #222222;
   cursor: pointer;
   text-transform: capitalize;
   padding: 10px;
@@ -93,7 +93,8 @@ div.button-start button {
 div.button-start button:hover {
   background-color: #0080ff;
   transition: 0.5s ease;
-  color: #fff;
+  color: #ffffff;
+  border: none;
 }
 
 /* end section start  */
@@ -105,7 +106,7 @@ div.button-start button:hover {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #0084fffd;
+  background-color: #00070efd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
@@ -156,7 +157,7 @@ div.button-start button:hover {
 }
 
 .logo h1 i {
-  color: #0080ff4b;
+  color: #0080ffc6;
   animation: change 5s infinite;
   margin-left: 10px;
 }
@@ -179,8 +180,8 @@ div.button-start button:hover {
 .main-section {
   position: relative;
   top: 100px;
-  background-color: #ffffff;
-  border: 1px solid #b400000c;
+  background-color: #000000;
+  border: 1px solid #0270ff30;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -197,7 +198,7 @@ div.button-start button:hover {
 }
 
 .card {
-  background-color: #ffffff63;
+  background-color: #101010ca;
   max-width: 100%;
   margin: auto;
   padding: 20px;
@@ -207,7 +208,7 @@ div.button-start button:hover {
 }
 
 .card:hover {
-  background-color: #d6d6d679;
+  background-color: #4c4c4c79;
   box-shadow: rgba(0, 0, 0, 0.35);
   transition: 0.5s ease;
   font-size: 16.2px;
@@ -221,21 +222,21 @@ div.button-start button:hover {
 }
 
 .card-text {
-  color: #424242;
+  color: #ffffff;
   text-align: start;
 }
 
 .card-button button {
-  border: 0.5px solid #cccccc3f;
+  border: 0.5px solid #9090903f;
   background-color: transparent;
-  color: #3a3a3a;
+  color: #e1e1e1;
   padding: 5px;
   font-size: 20px;
   text-transform: capitalize;
 }
 
 .card-time {
-  color: #3f3f3f;
+  color: #d2d2d2;
 }
 
 .card-img img {
@@ -247,7 +248,7 @@ div.button-start button:hover {
 }
 
 .card-react {
-  color: #2a2a2a;
+  color: #747474;
   text-align: center;
 }
 

@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: Ubuntu;
   box-sizing: border-box;
-  background-color: #dcdcdcdd;
+  background-color: #000000;
   padding: 20px;
 }
 .main-nav {
@@ -14,7 +14,7 @@ body {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #0084fffd;
+  background-color: #00070efd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
@@ -55,7 +55,6 @@ body {
   color: #fff;
 }
 .grids > div {
-  background-color: #fff;
   grid-gap: 10px;
   max-width: 1300px;
   margin: auto;
@@ -68,13 +67,14 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #060606;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  width: 70%;
+  width: auto;
   margin: auto;
   margin-bottom: 100px;
+  color: #fff;
 }
 .header,
 .courses-btns {
@@ -90,11 +90,11 @@ body {
   background-color: transparent;
   border: 1px solid #ccc;
   cursor: pointer;
-  color: #5d5d5d;
+  color: #b3b3b3;
 }
 .courses-btns button.btn-threats {
   float: right;
-  background-color: #dcdcdcdd;
+  background-color: #353535dd;
 }
 .courses-btns button:hover,
 .courses-btns button.btn-All-Courses {
@@ -139,10 +139,10 @@ body {
 .subscribe-heading {
   width: 90%;
   margin: auto;
-  color: #333;
+  color: #f0f0f0;
 }
 .subscribe-heading .text {
-  color: #555555;
+  color: #ececec;
 }
 .subscribe-heading .text .btns button {
   background-color: #dcdcdc6d;
@@ -152,7 +152,7 @@ body {
   font-size: 20px;
   margin: 5px;
   text-transform: capitalize;
-  color: #515151;
+  color: #ebebeb;
   cursor: no-drop;
 }
 .subscriptions .country img {

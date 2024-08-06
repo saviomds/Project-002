@@ -15,7 +15,11 @@ messageForm.addEventListener("submit", (e) => {
 });
 
 socket.on("clients-total", (data) => {
-  clientsTotal.innerText = `Total Clients: ${data}`;
+  if (data == 1) {
+    clientsTotal.innerText = `${data} Mate`;
+  } else {
+    clientsTotal.innerText = `${data} Mates`;
+  }
 });
 
 function sendMessage() {

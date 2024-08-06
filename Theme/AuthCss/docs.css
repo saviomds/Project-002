@@ -1,6 +1,6 @@
 body {
   font-family: Ubuntu;
-  background-color: #ffffff7f;
+  background-color: #000000;
   margin: 0;
   padding: 0;
   -webkit-user-select: none; /* For Safari and Chrome */
@@ -10,7 +10,7 @@ body {
 }
 .heading-intro h1 {
   font-size: 42px;
-  background: -webkit-linear-gradient(#004065, #b3009e);
+  background: -webkit-linear-gradient(#0091ff, #ee00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -24,7 +24,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   font-weight: bold;
-  color: #4e4e4e;
+  color: #cccccc;
 }
 .card-intro {
   width: auto;
@@ -39,14 +39,14 @@ body {
 }
 .heading-intro {
   text-align: start;
-  background-color: #fffffffc;
+  background-color: #000000fc;
   max-width: 900px;
   margin: auto;
-  color: #000000;
+  color: #ffffff;
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 15px;
-  box-shadow: rgba(214, 214, 214, 0.601) 0px 2px 5px 0px,
+  box-shadow: rgba(40, 40, 40, 0.601) 0px 2px 5px 0px,
     rgba(143, 143, 143, 0.732) 0px 1px 1px 0px;
   height: auto;
 }
@@ -59,7 +59,7 @@ body {
   width: 90%; /* Reduced width for better fit */
   max-width: 1000px;
   text-align: center;
-  background-color: #0084fffd;
+  background-color: #00070efd;
   border-radius: 20px;
   padding: 5px;
   z-index: 1000; /* Ensures it stays above other content */
@@ -106,10 +106,10 @@ body {
 }
 .list-items {
   text-align: center;
-  background-color: #fffffffc;
+  background-color: #000000fc;
   max-width: 900px;
   margin: auto;
-  color: #000000;
+  color: #ffffff;
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 15px;
@@ -125,7 +125,7 @@ div.btn button {
   padding: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-size: 20px;
-  color: #00478a;
+  color: #0071da;
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid #ff00ea;
@@ -156,7 +156,7 @@ div.btn button {
 .side-end div {
   display: inline;
   padding: 10px;
-  color: #8a8a8a;
+  color: #ffffff;
   font-size: 25px;
 }
 .side-end div.icons button {
@@ -170,6 +170,7 @@ div.btn button {
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  color: #fff;
 }
 .header p {
   font-size: 20px;
@@ -179,9 +180,11 @@ div.btn button {
   width: 100%;
   height: 150px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #424242;
   font-size: 25px;
   padding: 10px;
+  background-color: #000000;
+  color: #fff;
 }
 .allWeb {
   float: right;
@@ -189,6 +192,7 @@ div.btn button {
   top: 60px;
   right: 20px;
 }
+
 .send button {
   float: right;
   padding: 5px;
@@ -214,11 +218,11 @@ div.btn button {
   cursor: progress;
   padding: 5px;
   font-size: 15px;
-  background-color: #e6e6e6;
+  background-color: #131313;
   text-transform: capitalize;
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: #004065;
+  color: #ffffff;
 }
 .add {
   position: relative;
@@ -229,12 +233,12 @@ div.btn button {
   margin: 10px;
   padding: 5px;
   font-size: 15px;
-  background-color: #e6e6e63c;
+  background-color: #0000003c;
   text-transform: capitalize;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  color: #004065;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   body {
