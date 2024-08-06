@@ -7,7 +7,9 @@ body {
   background-color: black;
 }
 .logo {
-  color: #0051a3;
+  color: #0080ff;
+  animation: change 2s infinite;
+  margin-top: -50px;
 }
 .menu-checkbox {
   display: none;
@@ -20,17 +22,35 @@ body {
 .menu-dots i {
   color: #0082f4;
   font-size: 50px;
-  animation: change 2s infinite; /* Apply the animation */
+  transition: 0.5 ease-in;
+  animation: change 5s infinite; /* Apply the animation */
 }
 
 @keyframes change {
   0% {
     color: #0051a3;
     border-radius: 5px;
+    transition: 0.5 ease-in;
   }
   50% {
     color: #0082f4;
     border-radius: 5px;
+    transition: 0.5 ease-in;
+  }
+  100% {
+    color: #6fbcff;
+    border-radius: 5px;
+    transition: 0.5 ease-in;
+  }
+  150% {
+    color: #001b33;
+    border-radius: 5px;
+    transition: 0.5 ease-in;
+  }
+  0% {
+    color: #870085;
+    border-radius: 5px;
+    transition: 0.5 ease-in;
   }
 }
 .menu-dots {
