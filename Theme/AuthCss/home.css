@@ -6,7 +6,9 @@ body {
   justify-content: center;
   background-color: black;
 }
-
+.logo {
+  color: #0051a3;
+}
 .menu-checkbox {
   display: none;
 }
