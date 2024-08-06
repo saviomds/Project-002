@@ -102,6 +102,7 @@ body {
 .container {
   position: relative;
   top: 20px;
+  padding-bottom: 130px;
 }
 .list-items {
   text-align: center;
@@ -173,6 +174,68 @@ div.btn button {
 .header p {
   font-size: 20px;
 }
+
+.input textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 25px;
+  padding: 10px;
+}
+.allWeb {
+  float: right;
+  position: relative;
+  top: 60px;
+  right: 20px;
+}
+.send button {
+  float: right;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #008cff;
+  cursor: pointer;
+}
+.send {
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  position: relative;
+  top: -110px;
+  left: 20px;
+}
+.allWeb button {
+  cursor: progress;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #e6e6e6;
+  text-transform: capitalize;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #004065;
+}
+.add {
+  position: relative;
+  top: -60px;
+  left: 20px;
+}
+.add button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #e6e6e63c;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #004065;
+}
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -203,12 +266,46 @@ div.btn button {
     display: grid;
     grid-template-columns: 100%;
   }
+  .input textarea {
+    width: 90%;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .add {
+    position: relative;
+    left: 10px;
+  }
+  .add button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .send button {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .send {
+    position: relative;
+    top: -109px;
+    left: -10px;
+  }
+  .allWeb button {
+    font-size: 13px;
+    position: relative;
+    top: -20px;
+  }
+  .container {
+    position: relative;
+    top: -20px;
+    padding-bottom: 130px;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     position: relative;
-    top: 50px;
+    top: -20px;
+    padding-bottom: 130px;
   }
   .list-items {
     height: auto;
@@ -238,14 +335,40 @@ div.btn button {
     width: 100%;
     padding: 15px;
   }
-  .container {
-    margin-bottom: 200px;
-  }
+
   body {
     padding: 10px;
   }
   .cards-intro {
     display: grid;
     grid-template-columns: 100%;
+  }
+  .input textarea {
+    width: 90%;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .add {
+    position: relative;
+    left: 10px;
+  }
+  .add button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .send button {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .send {
+    position: relative;
+    top: -109px;
+    left: -10px;
+  }
+  .allWeb button {
+    font-size: 13px;
+    position: relative;
+    top: -20px;
   }
 }
