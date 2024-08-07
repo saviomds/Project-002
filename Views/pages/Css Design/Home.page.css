@@ -291,7 +291,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.main-footer div.text p a {
+  text-decoration: none;
+}
 .socailmedia a {
   text-decoration: none;
   color: #fff;

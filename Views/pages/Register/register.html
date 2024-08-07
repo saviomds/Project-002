@@ -3,53 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../AuthCss/main.css" />
+    <link rel="stylesheet" href="../Css Design/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Sign-in</title>
+    <title>Sign-up</title>
   </head>
   <body>
-  
     <div class="register">
       <div class="header">
         <h2>Idempotent <i class="fa-solid fa-arrow-turn-down"></i></h2>
-        <h1>Sign-in</h1>
+        <h1>Sign-up</h1>
       </div>
       <form id="main-form">
         <div class="error" hidden></div>
         <div class="success" hidden></div>
         <div class="input-items">
           <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="E-mail / Name"
-          />
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+        <div class="input-items">
+          <label for="E-mail">E-mail</label>
+          <input type="email" id="E-mail" name="E-mail" placeholder="E-mail" />
         </div>
         <div class="input-items">
           <label for="password">Password</label>
           <input
-            type="text"
+            type="password"
             id="password"
             name="password"
             placeholder="Password"
           />
         </div>
-        <div class="linkAuthPage">
-          <p>
-            <a href="../ForgetPwd/forgetPwd.html">Forget Password? </a>
-          </p>
-        </div>
         <div class="button">
-          <button type="submit" id="login">Sign-in</button>
+          <button type="submit" id="register">Sign-up</button>
         </div>
         <div class="linkAuthPage">
           <p>
-            Don't have an account?
-            <a id="linkToPage" href="../Register/register.html">Sign-up</a>
+            Already have an account?
+            <a id="linkToPage" href="../Login/login.html">Sign-in</a>
           </p>
         </div>
       </form>
@@ -59,7 +52,7 @@
       src="../Sounds/digital-button-click-pop-davies-aguirre-1-1-00-00.mp3"
       preload="auto"
     ></audio>
-    <script src="../AuthJs/sound.js"></script>
-    <script src="../AuthJs/loginErr.js"></script>
+    <script src="../Js Interaction Design /sound.js"></script>
+    <script src="../Js Interaction Design /registerErr.js"></script>
   </body>
 </html>

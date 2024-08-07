@@ -9,10 +9,10 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Middleware to serve static files
-app.use(express.static(path.join(__dirname, "Theme")));
+app.use(express.static(path.join(__dirname, "Views/pages")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "Theme/Welcome", "index.html"));
+  res.sendFile(path.join(__dirname, "Views/pages/Welcome", "index.html"));
 });
 
 const port = process.env.PORT || 3000;
