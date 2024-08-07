@@ -1,128 +1,123 @@
 body {
-  font-family: Ubuntu;
+  font-family: Ubuntu, sans-serif;
   background-color: #000000;
   margin: 0;
   padding: 0;
-  -webkit-user-select: none; /* For Safari and Chrome */
-  -moz-user-select: none; /* For Firefox */
-  -ms-user-select: none; /* For Internet Explorer/Edge */
   user-select: none;
 }
+
+.heading-intro {
+  text-align: start;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 900px;
+  margin: auto;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: rgba(40, 40, 40, 0.6) 0px 2px 5px 0px,
+    rgba(143, 143, 143, 0.7) 0px 1px 1px 0px;
+}
+
 .heading-intro h1 {
   font-size: 42px;
   background: -webkit-linear-gradient(#0091ff, #ee00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.heading-intro > div {
-  padding: 20px;
-  margin: 10px;
-}
 
 .cards-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   font-weight: bold;
   color: #cccccc;
 }
+
 .card-intro {
-  width: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 5px;
-  margin-top: 20px;
   padding: 20px;
+  background-color: #222;
+  color: #fff;
 }
+
 .card-intro .icons-intro {
-  padding: 10px;
+  margin-top: 10px;
 }
-.heading-intro {
-  text-align: start;
-  background-color: #000000fc;
-  max-width: 900px;
-  margin: auto;
+
+.refresh.page {
+  margin-top: 20px;
+}
+
+.text-us {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input textarea {
+  width: 95%;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #424242;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #000000;
   color: #ffffff;
-  border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 15px;
-  box-shadow: rgba(40, 40, 40, 0.601) 0px 2px 5px 0px,
-    rgba(143, 143, 143, 0.732) 0px 1px 1px 0px;
-  height: auto;
-}
-/* end section start  */
-.main-nav {
-  position: fixed;
-  bottom: -1px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%; /* Reduced width for better fit */
-  max-width: 1000px;
-  text-align: center;
-  background-color: #00070efd;
-  border-radius: 20px;
-  padding: 5px;
-  z-index: 1000; /* Ensures it stays above other content */
+  margin: 10px;
 }
 
-.main-nav div {
-  display: inline-block;
+.add {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add button {
   padding: 10px;
-  margin: 5px;
-}
-
-.main-nav div a {
-  text-decoration: none;
-  font-size: 30px;
-  color: #fff;
-}
-
-.main-nav div a:hover {
-  background-color: #ffffff2d;
+  font-size: 15px;
+  background-color: #0000003c;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
   border-radius: 5px;
-  margin: 5px;
-  padding: 15px;
-  font-size: 30px;
-  transition: 1s ease-in-out;
+  color: #ffffff;
 }
 
-.main-nav div i#docs {
-  background-color: #ffffff2d;
+.send button {
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  border: none;
   border-radius: 5px;
-  margin: 5px;
-  padding: 15px;
-  font-size: 30px;
-  transition: 1s ease-in-out;
-  cursor: none;
-}
-
-.main-nav div i {
-  color: #fff;
-}
-.container {
+  color: #ffffff;
+  background-color: #008cff;
+  cursor: pointer;
   position: relative;
-  top: 20px;
-  padding-bottom: 130px;
+  left: 95%;
+  top: -40px;
 }
+
 .list-items {
   text-align: center;
-  background-color: #000000fc;
+  background-color: rgba(0, 0, 0, 0.8);
   max-width: 900px;
   margin: auto;
   color: #ffffff;
   border-radius: 5px;
-  padding: 5px;
+  padding: 20px;
   margin-bottom: 15px;
-  box-shadow: rgba(214, 214, 214, 0.601) 0px 2px 5px 0px,
-    rgba(143, 143, 143, 0.732) 0px 1px 1px 0px;
-  height: auto;
+  box-shadow: rgba(214, 214, 214, 0.6) 0px 2px 5px 0px,
+    rgba(143, 143, 143, 0.7) 0px 1px 1px 0px;
 }
 
-.list-items div.list div.btn {
+.list-items .list .btn {
   text-align: start;
 }
-div.btn button {
-  padding: 5px;
+
+.btn button {
+  padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-size: 20px;
   color: #0071da;
@@ -132,6 +127,7 @@ div.btn button {
   position: relative;
   left: 5%;
 }
+
 .header {
   margin-top: -10px;
   text-align: start;
@@ -139,240 +135,158 @@ div.btn button {
   left: 5%;
   width: 70%;
 }
+
 .header h1 {
   text-transform: capitalize;
 }
+
 .header h1 i {
   color: #ff00ea;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
   padding: 5px;
-  margin: 5;
+  margin: 5px;
 }
+
 .side-end {
   text-align: end;
-  position: relative;
 }
-.side-end div {
+
+.side-end .icons {
   display: inline;
   padding: 10px;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
 }
-.side-end div.icons button {
+
+.side-end .icons button {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  position: relative;
-  top: -5px;
-  text-transform: capitalize;
-  font-size: 20px;
+  font-size: 15px;
   background-color: transparent;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
 }
+
 .header p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.input textarea {
-  width: 100%;
-  height: 150px;
-  border-radius: 5px;
-  border: 1px solid #424242;
-  font-size: 25px;
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px);
+  max-width: 1000px;
+  text-align: center;
+  background-color: rgba(0, 7, 14, 0.9);
+  border-radius: 20px;
   padding: 10px;
-  background-color: #000000;
+  z-index: 1000;
+}
+
+.main-nav .item {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+
+.main-nav .item a {
+  text-decoration: none;
+  font-size: 24px;
   color: #fff;
 }
-.allWeb {
-  float: right;
-  position: relative;
-  top: 60px;
-  right: 20px;
+
+.main-nav .item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
 }
 
-.send button {
-  float: right;
-  padding: 5px;
-  font-size: 20px;
-  text-transform: capitalize;
-  border: none;
+.main-nav .item i#docs {
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  color: #ffffff;
-  background-color: #008cff;
-  cursor: pointer;
+  padding: 15px;
+  font-size: 24px;
+  cursor: default;
 }
-.send {
-  margin: 10px;
-  padding: 5px;
-  font-size: 15px;
-  text-transform: capitalize;
-  border-radius: 5px;
-  position: relative;
-  top: -110px;
-  left: 20px;
+
+.main-nav .item i {
+  color: #fff;
 }
-.allWeb button {
-  cursor: progress;
-  padding: 5px;
-  font-size: 15px;
-  background-color: #131313;
-  text-transform: capitalize;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: #ffffff;
-}
-.add {
-  position: relative;
-  top: -60px;
-  left: 20px;
-}
-.add button {
-  margin: 10px;
-  padding: 5px;
-  font-size: 15px;
-  background-color: #0000003c;
-  text-transform: capitalize;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #ffffff;
+.container {
+  margin-bottom: 110px;
 }
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
+  .heading-intro h1 {
+    font-size: 36px;
   }
-  .main-nav {
-    width: 90%;
-    padding: 20px;
-  }
-  .list-items {
-    height: auto;
-    font-size: 10px;
-  }
-  .side-end {
-    text-align: end;
-    position: relative;
-    top: -10px;
-  }
-  .side-end div {
-    font-size: 25px;
-  }
-  .header {
-    width: 90%;
-  }
-  .header p {
-    font-size: 15px;
-  }
+
   .cards-intro {
-    display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
+
   .input textarea {
-    width: 90%;
-    font-size: 13px;
-    padding: 10px;
+    font-size: 14px;
   }
-  .add {
-    position: relative;
-    left: 10px;
-  }
-  .add button {
-    margin: 5px;
-    padding: 5px;
-    font-size: 13px;
-  }
-  .send button {
-    padding: 5px;
-    font-size: 20px;
-  }
-  .send {
-    position: relative;
-    top: -109px;
-    left: -10px;
-  }
+
+  .add button,
+  .send button,
   .allWeb button {
-    font-size: 13px;
-    position: relative;
-    top: -20px;
+    font-size: 14px;
   }
-  .container {
-    position: relative;
-    top: -20px;
-    padding-bottom: 130px;
+
+  .main-nav {
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    position: relative;
-    top: -20px;
-    padding-bottom: 130px;
-  }
-  .list-items {
-    height: auto;
-    font-size: 10px;
-  }
-  .side-end {
-    text-align: end;
-    position: relative;
-    top: -10px;
-  }
-  .side-end div {
-    font-size: 25px;
-  }
-  .side-end div.icons button {
-    padding: 10px;
-    position: relative;
-    top: -5px;
-    font-size: 15px;
-  }
-  .header {
-    width: 90%;
-  }
-  .header p {
-    font-size: 15px;
-  }
-  .main-nav {
-    width: 100%;
-    padding: 15px;
+  .heading-intro h1 {
+    font-size: 30px;
   }
 
-  body {
-    padding: 10px;
-  }
-  .cards-intro {
-    display: grid;
-    grid-template-columns: 100%;
-  }
   .input textarea {
-    width: 90%;
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .add button,
+  .send button,
+  .allWeb button {
+    font-size: 12px;
+  }
+
+  .main-nav {
     padding: 10px;
-  }
-  .add {
-    position: relative;
-    left: 10px;
-  }
-  .add button {
-    margin: 5px;
-    padding: 5px;
-    font-size: 13px;
-  }
-  .send button {
-    padding: 5px;
     font-size: 20px;
   }
-  .send {
-    position: relative;
-    top: -109px;
-    left: -10px;
+  .header {
+    width: auto;
   }
-  .allWeb button {
-    font-size: 13px;
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .input textarea {
+    width: 90%;
+    height: 150px;
+  }
+  .send button {
     position: relative;
-    top: -20px;
+    left: 85%;
+    top: -120px;
+  }
+  .header p {
+    width: 90%;
+  }
+  .add {
+    padding: 0;
+  }
+  .container {
+    margin-bottom: 110px;
   }
 }

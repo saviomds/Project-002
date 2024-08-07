@@ -14,9 +14,10 @@ body {
   background-color: #000000;
 }
 
-.title {
+.title a {
   margin: 20px 0;
   color: #0080ff;
+  text-decoration: none;
 }
 
 .title strong {
@@ -131,7 +132,8 @@ body {
   border: none;
   padding: 0 20px;
   outline: none;
-  background-color: #eaeaea;
+  background-color: #0084ff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -176,7 +178,7 @@ body {
   }
 
   .message-container {
-    height: 400px;
+    height: 330px;
   }
 
   .message-form {

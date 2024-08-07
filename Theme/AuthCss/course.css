@@ -1,23 +1,23 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: Ubuntu;
+  padding: 20px;
+  font-family: Ubuntu, sans-serif;
   box-sizing: border-box;
   background-color: #000000;
-  padding: 20px;
 }
+
 .main-nav {
   position: fixed;
-  bottom: -1px; /* Adjust as needed */
+  bottom: 0; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; /* Reduced width for better fit */
+  width: 90%;
   max-width: 1000px;
   text-align: center;
   background-color: #00070efd;
   border-radius: 20px;
   padding: 5px;
-  z-index: 1000; /* Ensures it stays above other content */
+  z-index: 1000;
 }
 
 .main-nav div {
@@ -35,54 +35,41 @@ body {
 .main-nav div a:hover {
   background-color: #ffffff2d;
   border-radius: 5px;
-  margin: 5px;
   padding: 15px;
-  font-size: 30px;
   transition: 1s ease-in-out;
 }
 
 .main-nav div i#couursesss {
   background-color: #ffffff2d;
   border-radius: 5px;
-  margin: 5px;
   padding: 15px;
   font-size: 30px;
   transition: 1s ease-in-out;
-  cursor: none;
 }
 
 .main-nav div i {
   color: #fff;
-}
-.grids > div {
-  grid-gap: 10px;
-  max-width: 1300px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.grids {
-  padding: 20px;
 }
 
 .container {
   background-color: #060606;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px auto;
   width: auto;
-  margin: auto;
-  margin-bottom: 100px;
   color: #fff;
+  margin-bottom: 100px;
 }
+
 .header,
 .courses-btns {
   padding: 20px;
 }
+
 .header p {
   font-size: 20px;
 }
+
 .courses-btns button {
   padding: 10px;
   border-radius: 5px;
@@ -92,25 +79,28 @@ body {
   cursor: pointer;
   color: #b3b3b3;
 }
+
 .courses-btns button.btn-threats {
   float: right;
   background-color: #353535dd;
 }
+
 .courses-btns button:hover,
 .courses-btns button.btn-All-Courses {
   background-color: #0084fffd;
-  transition: 0.5s ease-in-out;
   color: #fff;
   border: none;
+  transition: 0.5s ease-in-out;
 }
+
 .courses-hold {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .course {
   border: 1px solid #cccccc96;
-  width: auto;
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
@@ -121,19 +111,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .subscribe-header div button {
-  font-size: 20px;
-  text-transform: capitalize;
-  border: none;
   font-size: 15px;
   font-weight: bolder;
   padding: 10px;
   background-color: transparent;
+  border: none;
 }
+
 .subscribe-header div button.subscribe {
   color: rgb(0, 255, 0);
   background-color: rgba(0, 128, 0, 0.071);
   border-radius: 5px;
+  text-transform: capitalize;
+}
+.subscribe-header div button#subscribe {
+  color: rgb(117, 117, 117);
+  background-color: rgba(0, 128, 0, 0.071);
+  border-radius: 5px;
+  text-transform: capitalize;
 }
 
 .subscribe-heading {
@@ -141,9 +138,11 @@ body {
   margin: auto;
   color: #f0f0f0;
 }
+
 .subscribe-heading .text {
   color: #ececec;
 }
+
 .subscribe-heading .text .btns button {
   background-color: #dcdcdc6d;
   padding: 10px;
@@ -153,25 +152,30 @@ body {
   margin: 5px;
   text-transform: capitalize;
   color: #ebebeb;
-  cursor: no-drop;
+  cursor: pointer;
 }
+
+.subscriptions {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
 .subscriptions .country img {
   width: 30px;
   height: 25px;
   margin-left: -10px;
   border-radius: 100px;
 }
-.subscriptions {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
+
 .subscriptions .people-subscription {
   margin-top: -20px;
   font-size: 20px;
   text-align: end;
   text-transform: capitalize;
 }
+
 @media (max-width: 480px) {
   .courses-btns {
     display: grid;
@@ -183,25 +187,21 @@ body {
     margin: 5px;
   }
   .container {
-    width: auto;
     padding-bottom: 100px;
   }
   .courses-hold {
-    display: grid;
-    grid-template-columns: 100%;
-    width: auto;
+    grid-template-columns: 1fr;
   }
   .subscriptions {
-    display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
-  .subscriptions .people-subscription p {
+  .people-subscription p {
     text-align: start;
-  }
-  body {
-    padding: 10px;
+    position: relative;
+    left: -10px;
   }
 }
+
 @media (max-width: 768px) {
   .courses-btns {
     display: grid;
@@ -213,22 +213,19 @@ body {
     margin: 5px;
   }
   .container {
-    width: auto;
     padding-bottom: 100px;
   }
   .courses-hold {
-    display: grid;
-    grid-template-columns: 100%;
-    width: auto;
+    grid-template-columns: 1fr;
   }
   .subscriptions {
-    display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
-  .subscriptions .people-subscription p {
+  .course {
+    width: 100%;
+    position: relative;
     text-align: start;
-  }
-  body {
-    padding: 10px;
+
+    left: -40px;
   }
 }
