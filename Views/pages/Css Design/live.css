@@ -1,0 +1,263 @@
+body {
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(28, 29, 34, 1);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.JoinUs {
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.choise {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #00000059;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.Members {
+  background-color: #353333;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.notify,
+.new-feature {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #746f6f;
+  text-align: center;
+}
+
+.notify:active,
+.new-feature:active {
+  background-color: #353333;
+  color: #fff;
+}
+
+.new-updates {
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.new-updates div {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-transform: capitalize;
+}
+
+.now .today button {
+  border: none;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #746f6f;
+  color: #fff;
+  font-size: 20px;
+}
+
+.now .seeall {
+  text-align: end;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: #00000059;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+  height: auto;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.profile-pic img {
+  width: 70px;
+  height: 80px;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.profileName {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.profileName div p {
+  color: #757070;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.profileName div p strong {
+  color: #fff;
+}
+
+.time {
+  margin-top: 5px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btns button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2e2e2e81;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btns button.join {
+  background-color: #0061bb;
+}
+
+.profileName div p i {
+  color: rgba(0, 128, 0, 0.555);
+  background-color: rgba(0, 68, 0, 0.527);
+  padding: 10px;
+  border-radius: 50px;
+  animation: change 2.5s infinite;
+}
+
+@keyframes change {
+  0% {
+    background-color: rgba(0, 155, 0, 0.527);
+  }
+  50% {
+    background-color: rgba(0, 80, 0, 0.527);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .JoinUs {
+    font-size: 20px;
+  }
+
+  .choise {
+    font-size: 15px;
+  }
+
+  .Members {
+    width: 100%;
+  }
+
+  .notify,
+  .new-feature {
+    width: 100%;
+  }
+
+  .new-updates {
+    font-size: 20px;
+  }
+
+  .now .today button {
+    font-size: 16px;
+  }
+
+  .profile {
+    font-size: 18px;
+  }
+
+  .profile-pic img {
+    width: 60px;
+    height: 70px;
+  }
+
+  .btns button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    padding: 10px;
+  }
+
+  .JoinUs {
+    font-size: 18px;
+  }
+
+  .choise {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .Members {
+    width: auto;
+  }
+
+  .notify,
+  .new-feature {
+    width: 100%;
+  }
+
+  .new-updates {
+    font-size: 18px;
+  }
+
+  .now .today button {
+    font-size: 14px;
+  }
+
+  .profile {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .profile-pic img {
+    width: auto;
+    height: 60px;
+    position: relative;
+    top: 20px;
+  }
+
+  .btns button {
+    font-size: 12px;
+  }
+  .profileName {
+    padding-left: 70px;
+    margin-top: -80px;
+  }
+  .profileName div p i {
+    padding: 2px;
+  }
+}
