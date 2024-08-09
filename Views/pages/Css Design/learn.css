@@ -157,6 +157,8 @@ th {
 tr:nth-child(even) {
   background-color: #474747;
 }
+
+/* Media query for devices with max-width of 480px */
 @media (max-width: 480px) {
   .slide-items {
     display: grid;
@@ -165,57 +167,80 @@ tr:nth-child(even) {
     padding: 10px;
     width: auto;
   }
+
   .container {
-    max-width: auto;
+    max-width: 100%;
     margin: auto;
     margin-top: 10px;
     height: auto;
   }
+
+  .slide-left,
   .slide-right {
-    width: auto;
-  }
-  .slide-right .header {
     width: 100%;
+  }
+
+  .slide-left {
+    border-right: none; /* Remove border for full-width layout */
   }
 
   .learn-js {
-    padding: 5px;
+    padding: 10px; /* Increase padding for better readability */
   }
+
   .learn-js .header {
-    padding: 5px;
-    width: auto;
-    margin-top: 30px;
+    padding: 10px; /* Ensure header fits well */
+    width: 100%; /* Full width for header */
   }
+
   .content-js {
-    width: auto;
+    width: 100%; /* Full width for content area */
   }
+
   .hint,
   .short {
-    width: 100%;
-    margin: 5px;
+    width: 100%; /* Ensure hint and short fit well */
+    margin: 10px 0; /* Adjust margin for spacing */
   }
+
   .command {
-    margin: 5px;
+    margin: 10px 0; /* Adjust margin for spacing */
     padding: 10px;
     width: 100%;
   }
+
   .command div.dots {
-    float: right;
-    font-size: 20px;
-    margin-top: -50px;
-    padding: 5px;
+    float: right; /* Reset float for better positioning */
+    font-size: 24px; /* Adjust font size for better fit */
+    margin: 0; /* Reset margin */
     color: #836400;
+    margin-top: -40px;
   }
 
   .command div.command-text {
-    float: left;
-    font-size: 20px;
-    margin-top: -50px;
-    text-transform: capitalize;
-    text-decoration: underline;
+    float: none; /* Reset float */
+    font-size: 18px; /* Adjust font size for better fit */
+    margin: 0; /* Reset margin */
     color: #919191;
   }
+
   .example {
-    margin-top: -40px;
+    margin-top: 10px; /* Adjust margin for spacing */
+  }
+
+  /* Responsive table styling */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  th,
+  td {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  tr:nth-child(even) {
+    background-color: #474747;
   }
 }
