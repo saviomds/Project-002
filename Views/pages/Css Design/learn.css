@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: Ubuntu, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+}
+
+.slide-items {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.slide-left {
+  border-right: 1px solid #5a5a5a57;
+  background-color: #0013242d;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-clip-margin: 2px;
+  overscroll-behavior-y: 1px;
+  scrollbar-width: thin;
+}
+
+.item {
+  padding: 10px;
+  background-color: #242424;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item:hover,
+.item:active {
+  background-color: #0063f83a;
+  transition: 1s ease;
+}
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  text-align: start;
+  cursor: pointer;
+}
+.list-down ul li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+
+  text-transform: capitalize;
+}
+
+.learn-js {
+  text-align: start;
+  padding: 20px;
+}
+.learn-js .header {
+  background-color: #61616123;
+  padding: 10px;
+  width: auto;
+  border-radius: 10px;
+  margin: 10px;
+  text-transform: capitalize;
+}
+.sub-head {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  text-transform: capitalize;
+}
+.sub-head h3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: start;
+  text-decoration: underline;
+}
+.sub-text {
+  padding: 10px;
+}
+.hint {
+  background-color: #836400;
+  border-top-right-radius: 20px;
+}
+.command {
+  margin: 20px;
+  text-transform: lowercase;
+  padding: 10px;
+  font-size: large;
+  color: #a1a1a1;
+  background-color: #14191a;
+  border: 1px solid #ffffff46;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 55, 92, 0.712);
+  white-space: pre-wrap; /* Ensures that whitespace and new lines are preserved */
+}
+.command div.dots {
+  float: right;
+  font-size: 40px;
+  margin-top: -100px;
+  color: #836400;
+}
+.command div.command-text {
+  float: left;
+  font-size: 20px;
+  margin-top: -50px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #919191;
+}
+.example {
+  margin-top: -40px;
+}
+
+@media (max-width: 480px) {
+  .slide-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+  }
+  .container {
+    max-width: auto;
+    margin: auto;
+    margin-top: 10px;
+    height: auto;
+  }
+  .slide-right {
+    width: auto;
+  }
+  .slide-right .header {
+    width: 100%;
+  }
+
+  .learn-js {
+    padding: 5px;
+  }
+  .learn-js .header {
+    padding: 5px;
+    width: auto;
+    margin-top: 30px;
+  }
+  .content-js {
+    width: auto;
+  }
+  .hint {
+    width: 100%;
+    margin: 5px;
+  }
+  .command {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  .command div.dots {
+    float: right;
+    font-size: 20px;
+    margin-top: -50px;
+    padding: 5px;
+    color: #836400;
+  }
+  .command div.command-text {
+    float: left;
+    font-size: 20px;
+    margin-top: -50px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #919191;
+  }
+  .example {
+    margin-top: -40px;
+  }
+}
