@@ -187,6 +187,10 @@ body {
   gap: 20px;
 }
 
+.card-items a {
+  text-decoration: none;
+}
+
 .card {
   background-color: #101010ca;
   border-radius: 10px;
